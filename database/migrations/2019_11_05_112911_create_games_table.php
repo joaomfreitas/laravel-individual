@@ -23,6 +23,7 @@ class CreateGamesTable extends Migration
             $table->integer('home_goals');
             $table->integer('away_goals');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

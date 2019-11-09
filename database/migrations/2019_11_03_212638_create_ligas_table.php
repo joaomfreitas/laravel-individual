@@ -19,6 +19,7 @@ class CreateLigasTable extends Migration
             $table->string('country');
             $table->string('image')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

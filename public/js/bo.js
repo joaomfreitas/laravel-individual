@@ -33279,7 +33279,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/nunoribeiro/Sites/ua/tdi/boilerplate/resources/js/bo.js */"./resources/js/bo.js");
+module.exports = __webpack_require__(/*! /opt/lampp/htdocs/laravel-individual/resources/js/bo.js */"./resources/js/bo.js");
 
 
 /***/ })

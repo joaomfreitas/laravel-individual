@@ -20,7 +20,7 @@ class CreateEquipasTable extends Migration
             $table->string('city');
             $table->string('image')->nullable();
             $table->bigInteger('league')->unsigned();
-            $table->foreign('league')->references('id')->on('ligas');
+            $table->foreign('league')->references('id')->on('leagues');
             $table->timestamps();
             $table->softDeletes();
         });

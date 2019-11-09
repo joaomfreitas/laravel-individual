@@ -12,4 +12,12 @@ class Team extends Model
     protected $fillable = [
         'name', 'budget', 'city', 'image', 'league'
     ];
+
+    protected function getLeague(){
+        return $this->belongsTo('App\League', 'league');
+    }
+
+    protected function getPlayers(){
+        return $this->hasMany('App\Player', 'team');
+    }
 }

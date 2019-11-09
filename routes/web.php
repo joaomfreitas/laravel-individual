@@ -37,3 +37,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Backoffice', 'middleware' => 
         Route::resource('user', 'UserController');
     }
 );
+
+
+Route::name('web.')->group(function(){
+    Route::resource('leagues', 'WebLeagueController');
+    Route::resource('teams', 'WebTeamController');
+});
+

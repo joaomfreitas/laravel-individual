@@ -36986,8 +36986,8 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/nunoribeiro/Sites/ua/tdi/boilerplate/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/nunoribeiro/Sites/ua/tdi/boilerplate/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /opt/lampp/htdocs/laravel-individual/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /opt/lampp/htdocs/laravel-individual/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
