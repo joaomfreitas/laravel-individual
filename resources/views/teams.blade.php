@@ -11,9 +11,24 @@
     <a href={{route('web.teams.create')}}>
         <button type="button" class="btn btn-primary">+ Add Team</button>
     </a>
+    <div class="mb-2" style="margin-top:20px">
+        Sort by:
+        <a href="?sort=name">
+            <button type="button" class="btn btn-secondary">NAME</button>
+        </a>
+        <a href="?sort=budget">
+            <button type="button" class="btn btn-secondary">BUDGET</button>
+        </a>
+        <a href="?sort=city">
+            <button type="button" class="btn btn-secondary">CITY</button>
+        </a>
+        <a href="?sort=league">
+            <button type="button" class="btn btn-secondary">LEAGUE (ID)</button>
+        </a>
+    </div>
     <div class="mb-5 p-2">
         <div class="row">
-            @foreach($teams as $team)
+            @foreach($teams->sortBy(app('request')->input('sort')) as $team)
                 <div class="col-lg-3 col-xs-6 col-sm-6 p-2 text-center card">
                     <a style="color: black" href={{route('web.teams.show', $team->id)}}>
                         <div class="card-body hoverCard">

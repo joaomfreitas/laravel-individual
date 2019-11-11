@@ -17,6 +17,7 @@ class WebLeagueController extends Controller
     public function index()
     {
         //
+
         $leagues = League::all();
         return view('leagues')->with('leagues', $leagues);
     }

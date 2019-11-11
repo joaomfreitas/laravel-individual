@@ -11,6 +11,12 @@ class Player extends Model
     //
 
     protected $fillable = [
-        'name', 'age', 'position', 'nationality', 'condition', 'team'
+        'name', 'age', 'position', 'nationality', 'condition', 'team', 'image'
     ];
+
+    public function teamInfo(){
+        return $this->belongsTo('App\Team', 'team');
+    }
+
+
 }

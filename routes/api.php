@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('league', 'LeagueController');
 Route::resource('team', 'TeamController');
+Route::resource('player', 'PlayerController');
+
