@@ -48,10 +48,6 @@ class TeamStoreRequest extends FormRequest
     protected function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(
-            response()->json(
-                [
-                    'data' => $validator->errors(),
-                    'msg' => 'Validation error.'
-                ], 422));
+            response()->redirectTo('teams/create')->withErrors($validator));
     }
 }

@@ -44,10 +44,7 @@ class LeagueStoreRequest extends FormRequest
     protected function failedValidation(Validator $validator)
     {
         throw new HttpResponseException(
-            response()->json(
-                [
-                    'data' => $validator->errors(),
-                    'msg' => 'Validation error.'
-                ], 422));
+            response()->redirectTo('leagues/create')->withErrors($validator));
+
     }
 }

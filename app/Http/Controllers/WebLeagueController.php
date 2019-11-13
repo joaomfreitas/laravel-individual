@@ -43,7 +43,6 @@ class WebLeagueController extends Controller
     public function store(LeagueStoreRequest $request)
     {
         //
-
         $data = $request->all();
 
         $file = $request->file('image')->store('images/league');

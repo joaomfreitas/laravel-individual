@@ -23,7 +23,6 @@
                         @enderror
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <label for="age" class="col-md-4 col-form-label text-md-right">{{ __('Age') }}</label>
 
@@ -37,34 +36,55 @@
                         @enderror
                     </div>
                 </div>
-
-
-
                 <div class="form-group row">
-                    <label for="budget" class="col-md-4 col-form-label text-md-right">{{ __('Budget (in €)') }}</label>
+                    <label for="position" class="col-md-4 col-form-label text-md-right">{{ __('Position') }}</label>
 
                     <div class="col-md-6">
-                        <input id="budget" type="text" class="form-control @error('budget') is-invalid @enderror" name="budget" value="{{ old('budget') }}" required autocomplete="budget" >
+                        <input id="position" type="text" class="form-control @error('position') is-invalid @enderror" name="position" value="{{ old('position') }}" required autocomplete="position" >
 
-                        @error('budget')
+                        @error('position')
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                         @enderror
                     </div>
                 </div>
+                <div class="form-group row">
+                    <label for="condition" class="col-md-4 col-form-label text-md-right">{{ __('Condition') }}</label>
 
+                    <div class="col-md-6">
+                        <input id="condition" type="text" class="form-control @error('condition') is-invalid @enderror" name="condition" value="{{ old('condition') }}" required autocomplete="condition" >
+
+                        @error('condition')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nationality" class="col-md-4 col-form-label text-md-right">{{ __('Nationality') }}</label>
+
+                    <div class="col-md-6">
+                        <input id="nationality" type="text" class="form-control @error('nationality') is-invalid @enderror" name="nationality" value="{{ old('nationality') }}" required autocomplete="nationality" >
+
+                        @error('nationality')
+                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                        @enderror
+                    </div>
+                </div>
                 <div class="form-group row">
                     <label for="league" class="col-md-4 col-form-label text-md-right">{{ __('Team') }}</label>
                     <div class="col-md-6">
                         <select class="form-control" id="team" name='team' form="addteam">
-                            @foreach($teams as $team)
+                            @foreach($teams->sortBy('name') as $team)
                                 <option value={{$team->id}}>{{$team->name}}</option>
                             @endforeach
                         </select>
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <label for="image" class="col-md-4 col-form-label text-md-right">Image</label>
 
@@ -78,7 +98,6 @@
                         @enderror
                     </div>
                 </div>
-
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         <button type="submit" class="btn btn-primary">
