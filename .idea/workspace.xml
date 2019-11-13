@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ed9ad9-a455-4603-b6b8-e9fa934d866d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/players.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/addplayer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Player.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Player.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/leagues.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/leagues.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/teams.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teams.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/players.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/players.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

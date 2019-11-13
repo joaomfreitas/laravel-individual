@@ -34,7 +34,8 @@
                         <h4>{{$player->name}}</h4>
                         <h5>
                             <img src="uploads/{{$player->teamInfo->image}}" height="35"/>
-                            &nbsp;{{$player->teamInfo->name}}</h5>
+                            &nbsp;{{$player->teamInfo->name}}
+                        </h5>
                     </a>
                 </div>
             @endforeach
