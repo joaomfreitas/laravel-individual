@@ -2,24 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ed9ad9-a455-4603-b6b8-e9fa934d866d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/addgame.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/editgame.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/editplayer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/games.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/showgame.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/showplayer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/boilerplate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/boilerplate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeagueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeagueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlayerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TeamController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebPlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebPlayerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebTeamController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/LeagueStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/LeagueStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Team.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addplayer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addplayer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/leagues.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/leagues.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/showleague.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showleague.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/showteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showteam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bo.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bo.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bo/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bo/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showplayer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showplayer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -143,21 +152,36 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TCzPI6p77WEQmVegnCz5Gm8Gv3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views/bo/partials" />
       <recent name="$PROJECT_DIR$/resources/views/bo/users" />
@@ -204,6 +228,8 @@
       <workItem from="1573726998051" duration="1926000" />
       <workItem from="1573729893044" duration="5707000" />
       <workItem from="1573740919920" duration="1265000" />
+      <workItem from="1573753946714" duration="3316000" />
+      <workItem from="1573758743516" duration="4136000" />
     </task>
     <servers />
   </component>

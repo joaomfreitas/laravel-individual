@@ -95,8 +95,12 @@ class LeagueController extends Controller
         $data = $request->all();
 
         if($request->hasFile('image')){
-            $file = $request->file('image')->store('images/league');
-            $data['image'] = $file;
+            if($request->get('image') !== $league['image']){
+
+                $file = $request->file('image')->store('images/league');
+
+                $data['image'] = $file;
+            }
         }
 
         $league->update($data);

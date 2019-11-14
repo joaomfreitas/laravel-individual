@@ -93,8 +93,12 @@ class WebTeamController extends Controller
         $data = $request->all();
 
         if($request->hasFile('image')){
-            $file = $request->file('image')->store('images/team');
-            $data['image'] = $file;
+            if($request->get('image') !== $team['image']){
+
+                $file = $request->file('image')->store('images/teams');
+
+                $data['image'] = $file;
+            }
         }
 
         $team->update($data);

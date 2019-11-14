@@ -95,8 +95,12 @@ class PlayerController extends Controller
         $data = $request->all();
 
         if($request->hasFile('image')){
-            $file = $request->file('image')->store('images/player');
-            $data['image'] = $file;
+            if($request->get('image') !== $player['image']){
+
+                $file = $request->file('image')->store('images/player');
+
+                $data['image'] = $file;
+            }
         }
 
         $player->update($data);

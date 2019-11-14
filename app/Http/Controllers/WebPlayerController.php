@@ -91,12 +91,20 @@ class WebPlayerController extends Controller
         //
         $data = $request->all();
 
+
+        $data = $request->all();
+
         if($request->hasFile('image')){
-            $file = $request->file('image')->store('images/player');
-            $data['image'] = $file;
+            if($request->get('image') !== $player['image']){
+
+                $file = $request->file('image')->store('images/player');
+
+                $data['image'] = $file;
+            }
         }
 
         $player->update($data);
+
         return redirect()->route('web.players.index');
     }
 

@@ -11,7 +11,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-3 col-sm-4 text-center">
-                            <img src="../uploads/{{$player->image}}" height="200"/>
+                            <img src="../uploads/{{$player->image}}" height="200" style="max-width: 300px"/>
                         </div>
                         <div class="col-lg-9 col-sm-8 p-2">
                             <h2><a href="/teams/{{$player->teamInfo->id}}"><img src="../uploads/{{$player->teamInfo->image}}" height="30"/></a>&nbsp;{{$player->name}} </h2>
