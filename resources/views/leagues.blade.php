@@ -20,6 +20,7 @@
         </a>
     </div>
     <div class="mb-5 p-2">
+{{--        @include ('bo.partials.alerts')--}}
         <div class="row">
             @foreach($leagues->sortBy(app('request')->input('sort')) as $league)
                 <div class="col-lg-3 col-xs-6 col-sm-6 p-2 text-center card">

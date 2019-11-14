@@ -88,6 +88,7 @@
                     <a href="{{ route('web.leagues.index') }}">Leagues</a>
                     <a href="{{ route('web.teams.index') }}">Teams</a>
                     <a href="{{ route('web.players.index') }}">Players</a>
+                    <a href="{{ route('web.games.index') }}">Games</a>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ class Team extends Model
 {
     use SoftDeletes;
     //
+
     protected $fillable = [
         'name', 'budget', 'city', 'image', 'league'
     ];

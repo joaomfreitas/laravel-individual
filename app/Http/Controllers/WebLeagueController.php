@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\LeagueStoreRequest;
 use App\Http\Requests\LeagueUpdateRequest;
+use App\Http\Requests\WebLeagueStoreRequest;
 use App\League;
 use Illuminate\Http\Request;
 
@@ -40,7 +40,7 @@ class WebLeagueController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(LeagueStoreRequest $request)
+    public function store(WebLeagueStoreRequest $request)
     {
         //
         $data = $request->all();
@@ -110,6 +110,9 @@ class WebLeagueController extends Controller
     public function destroy(League $league)
     {
         //
+        $league->delete();
+
+        return redirect()->route('web.leagues.index')->withErrors(['success' => 'League '.$league['name'].' deleted with success!']);
     }
 
 }

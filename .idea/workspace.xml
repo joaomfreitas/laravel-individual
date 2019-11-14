@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ed9ad9-a455-4603-b6b8-e9fa934d866d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/addgame.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/editgame.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/editplayer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/games.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/showgame.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/showplayer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebLeagueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebPlayerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebPlayerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebTeamController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebTeamController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/LeagueStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/LeagueStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TeamStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/TeamStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/addplayer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addplayer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/leagues.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/leagues.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showleague.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showleague.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/showteam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/showteam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,15 +149,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/resources/views/bo/partials" />
       <recent name="$PROJECT_DIR$/resources/views/bo/users" />
@@ -185,6 +200,10 @@
       <workItem from="1573511982269" duration="118000" />
       <workItem from="1573512101780" duration="4128000" />
       <workItem from="1573661815470" duration="2332000" />
+      <workItem from="1573680760151" duration="14506000" />
+      <workItem from="1573726998051" duration="1926000" />
+      <workItem from="1573729893044" duration="5707000" />
+      <workItem from="1573740919920" duration="1265000" />
     </task>
     <servers />
   </component>

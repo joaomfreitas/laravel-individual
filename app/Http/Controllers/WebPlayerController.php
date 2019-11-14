@@ -75,8 +75,8 @@ class WebPlayerController extends Controller
      */
     public function edit(Player $player)
     {
-        return view('editplayer')->with('player', $player);
-
+        $teams = Team::all();
+        return view('editplayer')->with('player', $player)->with('teams', $teams);
     }
 
     /**
@@ -97,7 +97,6 @@ class WebPlayerController extends Controller
         }
 
         $player->update($data);
-
         return redirect()->route('web.players.index');
     }
 
@@ -110,5 +109,8 @@ class WebPlayerController extends Controller
     public function destroy(Player $player)
     {
         //
+        $player->delete();
+
+        return redirect()->route('web.players.index')->withErrors(['success' => 'Player '.$player['name'].' deleted with success!']);
     }
 }

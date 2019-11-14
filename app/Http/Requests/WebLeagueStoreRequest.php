@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class LeagueStoreRequest extends FormRequest
+class WebLeagueStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -37,17 +37,16 @@ class LeagueStoreRequest extends FormRequest
     {
         return[
             'name.required' => 'You need to fill the name field',
-            'country.required' => 'You need to fill the country field'
+            'country.required' => 'You need to fill the country field',
         ];
     }
 
     protected function failedValidation(Validator $validator)
     {
+//        $champID = $this->request->get('id_champion');
         throw new HttpResponseException(
-            response()->json(
-                [
-                    'data' => $validator->errors(),
-                    'msg' => 'Validation error.'
-                ], 422));
+//            response()->Redirect::back()->withErrors($validator));
+            response()->redirectTo('leagues/create')->withErrors($validator));
+
     }
 }

@@ -23,11 +23,9 @@
                                 <a href='{{$league->id}}/edit'>
                                     <button type="button" class="btn btn-primary btn-sm">Edit League</button>
                                 </a>
-                                <a href="">
-                                    <button type="button" class="btn btn-danger btn-sm">
-                                        <i class="fa fa-trash"></i>
-                                    </button>
-                                </a>
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalBonito">
+                                    <i class="fa fa-trash"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -69,6 +67,29 @@
                     {{--                @endforeach--}}
                 </div>
             @endforeach
+        </div>
+        <div class="modal" tabindex="-1" id='modalBonito' role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete League</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You're about to delete <strong>{{$league->name}}</strong> are you sure you want to delete it?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="form-horizontal" role="form" method="POST" action="{{ route('web.leagues.destroy', $league->id )}}">
+                            <input type="hidden" name="_method" value="DELETE">
+                            {{csrf_field()}}
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

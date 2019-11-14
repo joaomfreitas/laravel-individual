@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class LeagueStoreRequest extends FormRequest
+class GameUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,17 +27,18 @@ class LeagueStoreRequest extends FormRequest
     {
         return [
             //
-            'name' => 'required|unique:leagues|string|max:255',
-            'country' => 'required|string|max:255',
-            'image' => 'required|image',
+            'date' => 'string|max:255',
+            'home_team' => 'exists:team,id|integer',
+            'away_team' => 'exists:team,id|integer',
+            'home_goals' => 'integer',
+            'away_goals' => 'integer',
         ];
     }
 
     public function messages()
     {
         return[
-            'name.required' => 'You need to fill the name field',
-            'country.required' => 'You need to fill the country field'
+            //
         ];
     }
 

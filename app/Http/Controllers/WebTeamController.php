@@ -111,5 +111,8 @@ class WebTeamController extends Controller
     public function destroy(Team $team)
     {
         //
+        $team->delete();
+
+        return redirect()->route('web.teams.index')->withErrors(['success' => 'Team '.$team['name'].' deleted with success!']);
     }
 }
