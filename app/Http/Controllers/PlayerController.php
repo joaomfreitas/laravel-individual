@@ -116,7 +116,7 @@ class PlayerController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 
     /**
@@ -137,6 +137,6 @@ class PlayerController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 }

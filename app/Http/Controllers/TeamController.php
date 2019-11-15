@@ -116,7 +116,7 @@ class TeamController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 
     /**
@@ -138,6 +138,6 @@ class TeamController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 }

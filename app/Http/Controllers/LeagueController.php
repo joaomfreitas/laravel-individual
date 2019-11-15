@@ -114,7 +114,7 @@ class LeagueController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 
     /**
@@ -135,6 +135,6 @@ class LeagueController extends Controller
             'results' => 'OK'
         ];
 
-        return response($response, 204);
+        return response($response, 200);
     }
 }
