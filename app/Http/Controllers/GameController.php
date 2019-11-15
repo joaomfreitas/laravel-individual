@@ -7,11 +7,14 @@ use App\Http\Requests\GameStoreRequest;
 use App\Http\Requests\GameUpdateRequest;
 use Illuminate\Http\Request;
 
+/**
+ * @group Game management
+ */
 class GameController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Display a listing of the games.
+     * @authenticated
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -23,8 +26,8 @@ class GameController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
+     * Show the form for creating a new game.
+     * @authenticated
      * @return \Illuminate\Http\Response
      */
     public function create()
@@ -33,8 +36,8 @@ class GameController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
+     * Store a newly created game in storage.
+     * @authenticated
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -56,8 +59,8 @@ class GameController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
+     * Display the specified game.
+     * @authenticated
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
      */
@@ -68,8 +71,8 @@ class GameController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
+     * Show the form for editing the specified game.
+     * @authenticated
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
      */
@@ -79,8 +82,8 @@ class GameController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
+     * Update the specified game in storage.
+     * @authenticated
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
@@ -102,8 +105,8 @@ class GameController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove the specified game from storage.
+     * @authenticated
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
      */

@@ -7,11 +7,14 @@ use App\Http\Requests\PlayerUpdateRequest;
 use App\Player;
 use Illuminate\Http\Request;
 
+/**
+ * @group Player management
+ */
 class PlayerController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
+     * Display a listing of the players.
+     * @authenticated
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -23,9 +26,10 @@ class PlayerController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new player.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -33,10 +37,11 @@ class PlayerController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created player in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function store(PlayerStoreRequest $request)
     {
@@ -59,8 +64,8 @@ class PlayerController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
+     * Display the specified player.
+     * @authenticated
      * @param  \App\Player  $player
      * @return \Illuminate\Http\Response
      */
@@ -72,8 +77,8 @@ class PlayerController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
+     * Show the form for editing the specified player.
+     * @authenticated
      * @param  \App\Player  $player
      * @return \Illuminate\Http\Response
      */
@@ -83,8 +88,8 @@ class PlayerController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
-     *
+     * Update the specified player in storage.
+     *@authenticated
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Player  $player
      * @return \Illuminate\Http\Response
@@ -115,8 +120,8 @@ class PlayerController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove the specified player from storage.
+     * @authenticated
      * @param  \App\Player  $player
      * @return \Illuminate\Http\Response
      */

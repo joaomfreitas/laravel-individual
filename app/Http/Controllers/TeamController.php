@@ -6,12 +6,16 @@ use App\Http\Requests\TeamStoreRequest;
 use App\Team;
 use Illuminate\Http\Request;
 
+/**
+ * @group Team management
+ */
 class TeamController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the teams.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function index()
     {
@@ -22,9 +26,10 @@ class TeamController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new team.
      *
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function create()
     {
@@ -32,7 +37,7 @@ class TeamController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created team in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -57,10 +62,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified team.
      *
      * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function show(Team $team)
     {
@@ -69,10 +75,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified team.
      *
      * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function edit(Team $team)
     {
@@ -80,11 +87,12 @@ class TeamController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified teams in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function update(Request $request, Team $team)
     {
@@ -112,10 +120,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified resource from teams.
      *
      * @param  \App\Team  $team
      * @return \Illuminate\Http\Response
+     * @authenticated
      */
     public function destroy(Team $team)
     {
